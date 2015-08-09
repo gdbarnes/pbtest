@@ -1,0 +1,255 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900);
+
+// colours
+
+$deep-purple: #550066;
+$light-purple: #990099;
+
+$light-grey: #e8e8e8;
+$grey: #acacac;
+$dark-grey: #424242;
+
+$white: #ffffff;
+$black: #000000;
+$light-blue: #00aeef;
+
+// Status colours
+$red: #ed1c24;
+
+
+@mixin border($width, $colour) {
+  border: $width solid $colour;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px; 
+}
+
+a:hover {
+  text-decoration:none;
+  color: $grey;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  margin:0;
+  color: $deep-purple;
+}
+
+.navbar {
+  min-height: 100px;
+}
+
+.navbar-default {
+  background: #f1f2f2;
+}
+
+.navbar-default .navbar-brand {
+  color: $deep-purple;
+  font-size: 24px;
+  padding:12px 15px;
+  
+  .bigeZie {
+    font-size: 54px;
+    line-height: 48px;
+  }
+  
+  .regtm {
+    position: relative;
+    font-size: 32px;
+    top: -15px;
+  }
+  
+  .welcome-to {
+    font-size: 16px;
+  }
+}
+
+.current-page {
+  margin-top: 40px;
+  text-align:right;
+}
+
+section {
+  @include border(1px, $grey);
+  padding: 25px 40px;
+  margin-bottom:30px;
+  
+  
+  > h2:first-of-type {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $grey;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+}
+
+.the-property {
+  
+  .prop-details {
+    font-weight:600;
+    color:$deep-purple;
+    font-size:24px;
+  }
+  
+  .asking-price {
+    text-align: right;
+  }
+}
+
+
+
+
+.hide-show {
+  cursor:pointer;
+  font-weight:400;
+  font-size:16px;
+  color:$light-purple;
+  
+  span {
+    top: 2px;
+  }
+}
+
+.status {
+  color: $white;
+  padding: 3px 40px;
+  font-size:22px;
+  margin-bottom: 10px;
+    
+  span {
+    font-weight: 700;
+  }
+}
+
+.pb-button {
+  border-radius: 5px;
+  background: $grey;
+  color: $white;
+  font-size: 18px;
+  padding: 0 10px;
+  margin:10px 0;
+  
+  &:hover, &:focus {
+    color: $white;
+    opacity:0.8;
+  }
+}
+
+.pb-button-purple { 
+  @extend .pb-button;
+  background:$light-purple;
+}
+
+.pb-button-blue {
+  @extend .pb-button;
+  background:$light-blue;
+  font-size: 26px;
+}
+
+.withdrawn {
+  background: $red;
+}
+
+
+
+.prop-details img {
+  margin-right: 15px;
+}
+
+.offer, .your-response {
+  min-height:265px;
+}
+
+.row.equalheights {
+  overflow: hidden; 
+}
+
+.row.equalheights > [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.buyer-details p span {
+  color: $deep-purple;
+  display:inline-block;
+  width:130px;
+}
+
+.date, .time {
+  color: $deep-purple;
+  margin-left:30px;
+}
+
+.price-black {
+  color: $black;
+  font-size: 36px;
+  font-weight:600;
+}
+
+.your-response {
+  @include border(2px, $red);
+  background: $light-grey;
+  
+  h2, p {
+    color: $red;
+  }
+  
+  p {
+    font-weight:600;
+    font-size:30px;
+    line-height:34px;
+  }
+}
+
+.negotiations {
+  @include border(1px, $light-purple);
+  
+  .big-pound {
+    font-weight:900;
+    font-size: 36px;
+    color: $grey;
+    top:7px;
+  }
+  
+  .form-control {
+    @extend .price-black;
+    display: inline;
+    width: 200px;
+    font-size: 32px;
+    line-height: 1;
+    margin:15px 10px 10px 0;
+    padding:20px 5px;
+  }
+  
+  .error {
+    color: $red;
+    font-weight:400;
+    font-size:20px
+  }
+  
+  .glyphicon-ok {
+    color: $light-purple;
+  }
+}
+
+.inner-box {
+  padding:15px 30px;
+  margin-bottom:20px;
+  @include border(1px, $grey);
+  
+  p {
+    font-weight:600;
+    font-size:20px;
+    color:$deep-purple;
+  }
+}
