@@ -1,6 +1,6 @@
 #Purplebricks - technical test
 
-The compiled version for testing is in the */dist* folder
+The compiled version for testing is in the **/dist** folder
 
 ##Build notes
 
@@ -55,7 +55,7 @@ $("input[data-type='number']").keyup(function(event){
 });
 ```
 
-...and removing required from this code in index.html
+...and removing **disabled** from this code in index.html
 
 ```HTML
 <button class="pull-right btn btn-xs pb-button-blue" type="submit" disabled>SUBMIT OFFER</button>
