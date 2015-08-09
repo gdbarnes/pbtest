@@ -1,10 +1,15 @@
 #Purplebricks - technical test
 
-The compiled version for testing is in the **/dist** folder
+The compiled version for testing is in the **/dist** folder.
+
+To see the unoptimised code (and demo) before going through the build process:
+[http://codepen.io/gdbarnes/full/LVqoBd/](http://codepen.io/gdbarnes/full/LVqoBd/)
+
+Note, this *codepen* version does not include modernizr.
 
 ##Build notes
 
-* Using Yeoman to scaffold with Grunt, Bootstrap and Modernizr
+* Scaffolded with Yeoman using Grunt, Bootstrap and Modernizr
 * Added in live validation (submit button disabled until criteria are met)
 
 ##To do
