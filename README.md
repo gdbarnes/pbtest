@@ -11,14 +11,14 @@ Note, this *codepen* version does not include modernizr.
 
 ##Build notes
 
-* Scaffolded with Yeoman using Grunt, Bootstrap and Modernizr
-* Added in live validation (submit button disabled until criteria are met)
+* scaffolded with Yeoman using Grunt, Bootstrap and Modernizr
+* added in live validation (submit button disabled until criteria are met)
 
 ##To do
 
 * browser testing (optimise for IE8)
-* Work on responsive behavior
-* Equalise heights of multi column boxes
+* work on responsive behavior
+* equalise heights of multi column boxes
 
 ---
 
