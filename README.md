@@ -7,6 +7,8 @@ To see the unoptimised code (and demo) before going through the build process:
 
 Note, this *codepen* version does not include modernizr.
 
+---
+
 ##Build notes
 
 * Scaffolded with Yeoman using Grunt, Bootstrap and Modernizr
@@ -14,11 +16,15 @@ Note, this *codepen* version does not include modernizr.
 
 ##To do
 
-* optimise for IE8
+* browser testing (optimise for IE8)
+* Work on responsive behavior
+* Equalise heights of multi column boxes
 
 ---
 
-You can remove the live validation by removing this codeblock
+##Removing live validation
+
+You can remove the live validation by removing this codeblock from the **main.js** file
 
 ```JavaScript
 // Some very basic live validation
@@ -60,7 +66,7 @@ $("input[data-type='number']").keyup(function(event){
 });
 ```
 
-...and removing **disabled** from this code in index.html
+...and removing **disabled** from this code in **index.html**
 
 ```HTML
 <button class="pull-right btn btn-xs pb-button-blue" type="submit" disabled>SUBMIT OFFER</button>
