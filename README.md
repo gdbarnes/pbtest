@@ -5,8 +5,6 @@ The compiled version for testing is in the **/dist** folder.
 To see the unoptimised code (and demo) before going through the build process:
 [http://codepen.io/gdbarnes/full/LVqoBd/](http://codepen.io/gdbarnes/full/LVqoBd/)
 
-Note, this *codepen* version does not include modernizr.
-
 ---
 
 ##Build notes
